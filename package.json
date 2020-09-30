@@ -1,6 +1,6 @@
 {
-  "name": "@node/http",
+  "name": "node-http",
   "version": "1.0.0",
-  "description": "NodeJS http module",
+  "description": "NodeJS HTTP Module",
   "author": "Vu Duc Dung <ducdung8491@gmail.com>"
 }

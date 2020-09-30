@@ -1,5 +1,4 @@
 const { newRequest } = require("./request")
-const { defaultTransport } = require('./transport')
 
 class Client {
     constructor(transport) {
@@ -25,19 +24,4 @@ class Client {
     }
 }
 
-const defaultClient = new Client(defaultTransport)
-
-const get = (url) => {
-    return defaultClient.get(url)
-}
-
-const post = (url, contenType, body) => {
-    return defaultClient.post(url, contenType, body)
-}
-
-module.exports = {
-    Client,
-    defaultClient,
-    get,
-    post
-}
+module.exports = Client

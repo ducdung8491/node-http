@@ -40,9 +40,4 @@ class Transport {
     }
 }
 
-const defaultTransport = new Transport()
-
-modules.export = {
-    Transport,
-    defaultTransport
-}
+module.exports = Transport
