@@ -12,4 +12,4 @@ steps:
   image: node
   commands:
   - npm install
-  - npm run test
+  - npm start
