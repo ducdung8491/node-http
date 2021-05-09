@@ -12,3 +12,26 @@ steps:
 trigger:
   branch:
   - master
+  
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: test
+  image: node
+  commands:
+  - npm install
+  - npm run test
+  - npm run bundle
+
+- name: deploy
+  image: plugins/ssh
+  settings: ...
+
+trigger:
+  event:
+  - promote
+  target:
+  - production
