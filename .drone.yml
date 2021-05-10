@@ -23,12 +23,6 @@ steps:
   image: node
   commands:
   - npm install
-  - npm run test
-  - npm run bundle
-
-- name: deploy
-  image: plugins/ssh
-  settings: ...
 
 trigger:
   event:
